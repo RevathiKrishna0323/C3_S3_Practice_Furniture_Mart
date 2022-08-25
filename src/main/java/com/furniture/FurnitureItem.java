@@ -20,4 +20,54 @@ public class FurnitureItem {
     //defining a no argument constructor in the furniture item class
     public FurnitureItem() {
     }
+    // creating public getter and setter methods for the instance variables.
+
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getGrade() {
+        return grade;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public String getUsage() {
+        return usage;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public void setUsage(String usage) {
+        this.usage = usage;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
 }
