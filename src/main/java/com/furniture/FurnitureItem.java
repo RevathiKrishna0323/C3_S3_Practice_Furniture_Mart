@@ -17,6 +17,7 @@ public class FurnitureItem {
     // declaring static and final int variable
     public static final int DISCOUNT = 5;
     private String outdoor;
+    private double discountedPrice;
 
     //defining a no argument constructor in the furniture item class
     public FurnitureItem() {
@@ -71,13 +72,12 @@ public class FurnitureItem {
     public void setPrice(int price) {
         this.price = price;
     }
-
     // define a calculate discount method with return float
-    public double CalculateDiscount(int price, String usage) {
+    public double calculateDiscount(int price) {
         if (grade == 1 && usage == outdoor) {
             // give 5% discount
-            double discountedPrice = price - (price * 0.05);
+            double discountedPrice = price - (price * (DISCOUNT/100));
         }
-        return price;
+        return discountedPrice;
     }
 }
