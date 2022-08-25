@@ -10,12 +10,13 @@ public class FurnitureItem {
     //declaring private attributes in the class
     private String code;
     private String type;
-    private String grade;
+    private int grade;
     private String colour;
     private String usage;
-    private String price;
+    private double price;
     // declaring static and final int variable
-    static final int DISCOUNT = 5;
+    public static final int DISCOUNT = 5;
+    private String outdoor;
 
     //defining a no argument constructor in the furniture item class
     public FurnitureItem() {
@@ -31,7 +32,7 @@ public class FurnitureItem {
         return type;
     }
 
-    public String getGrade() {
+    public int getGrade() {
         return grade;
     }
 
@@ -43,7 +44,7 @@ public class FurnitureItem {
         return usage;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -55,7 +56,7 @@ public class FurnitureItem {
         this.type = type;
     }
 
-    public void setGrade(String grade) {
+    public void setGrade(int grade) {
         this.grade = grade;
     }
 
@@ -67,16 +68,16 @@ public class FurnitureItem {
         this.usage = usage;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
     // define a calculate discount method with return float
-    public float CalculateDiscount() {
-        if (grade == grade1 && usage == outdoor) {
+    public double CalculateDiscount(int price, String usage) {
+        if (grade == 1 && usage == outdoor) {
             // give 5% discount
-            discountedPrice = price - (price * 0.05);
+            double discountedPrice = price - (price * 0.05);
         }
-        return discountedPrice;
+        return price;
     }
 }
