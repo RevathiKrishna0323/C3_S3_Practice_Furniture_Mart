@@ -7,4 +7,10 @@
 package com.furniture;
 
 public class FurnitureItem {
-}
+    //declaring private attributes in the class
+    private String code;
+    private String type;
+    private String grade;
+    private String colour;
+    private String usage;
+    private String price;
