@@ -14,3 +14,5 @@ public class FurnitureItem {
     private String colour;
     private String usage;
     private String price;
+    // declaring static and final int variable
+    static final int DISCOUNT = 5;
