@@ -16,3 +16,8 @@ public class FurnitureItem {
     private String price;
     // declaring static and final int variable
     static final int DISCOUNT = 5;
+
+    //defining a no argument constructor in the furniture item class
+    public FurnitureItem() {
+    }
+}
