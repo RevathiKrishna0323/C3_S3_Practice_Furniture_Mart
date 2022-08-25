@@ -70,4 +70,13 @@ public class FurnitureItem {
     public void setPrice(String price) {
         this.price = price;
     }
+
+    // define a calculate discount method with return float
+    public float CalculateDiscount() {
+        if (grade == grade1 && usage == outdoor) {
+            // give 5% discount
+            discountedPrice = price - (price * 0.05);
+        }
+        return discountedPrice;
+    }
 }
