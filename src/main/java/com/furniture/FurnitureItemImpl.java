@@ -7,25 +7,23 @@
 package com.furniture;
 
 public class FurnitureItemImpl {
-    private static double discountedPrice;
-
     public static void main(String[] args) {
         //create obj with class name
         FurnitureItem furnitureItem = new FurnitureItem();
-        furnitureItem.getCode();
-        furnitureItem.getType();
-        furnitureItem.getGrade();
-        furnitureItem.getColour();
-        furnitureItem.getUsage();
-        furnitureItem.getPrice();
         furnitureItem.setCode("101");
         furnitureItem.setType("table");
         furnitureItem.setGrade(1);
         furnitureItem.setColour("green");
         furnitureItem.setUsage("outdoor");
         furnitureItem.setPrice(10);
-        furnitureItem.calculateDiscount(1000);
-        System.out.println("Discounted price = " + " $ " + discountedPrice);
+        System.out.println("Furniture code = " + furnitureItem.getCode());
+        System.out.println("Furniture type = " + furnitureItem.getType());
+        System.out.println("Furniture grade = " + furnitureItem.getGrade());
+        System.out.println("Furniture colour = " + furnitureItem.getColour());
+        System.out.println("Furniture usage = " + furnitureItem.getUsage());
+        System.out.println("Furniture price = " + furnitureItem.getPrice());
+        System.out.println("Discounted price = $" + furnitureItem.CalculateDISCOUNT(500.0));
+
 
     }
 }

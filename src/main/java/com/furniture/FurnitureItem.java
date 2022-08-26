@@ -1,12 +1,6 @@
-/*
- * Author Name: Revathi
- * Date: 25-08-2022
- * Created With: IntelliJ IDEA Community Edition
- */
-
 package com.furniture;
 
-public class FurnitureItem {
+class FurnitureItem {
     //declaring private attributes in the class
     private String code;
     private String type;
@@ -14,11 +8,9 @@ public class FurnitureItem {
     private String colour;
     private String usage;
     private double price;
+    private double discountedPrice;
     // declaring static and final int variable
     public static final int DISCOUNT = 5;
-    private String outdoor;
-    private double discountedPrice;
-
     //defining a no argument constructor in the furniture item class
     public FurnitureItem() {
     }
@@ -73,11 +65,12 @@ public class FurnitureItem {
         this.price = price;
     }
     // define a calculate discount method with return float
-    public double calculateDiscount(int price) {
-        if (grade == 1 && usage == outdoor) {
-            // give 5% discount
-            double discountedPrice = price - (price * (DISCOUNT/100));
+    public double CalculateDISCOUNT(double price) {
+
+        if (grade == 1 && usage.equals("outdoor")) {
         }
-        return discountedPrice;
+
+        return price - (price * DISCOUNT / 100);
+
     }
 }
